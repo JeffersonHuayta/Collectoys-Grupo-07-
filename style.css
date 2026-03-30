@@ -101,3 +101,8 @@ header {
     transform: translate(-50%, -50%) scale(1);
 }
  /* FIN DE BARRA DE NAVEGACION */
+
+a {
+    text-decoration: none;
+    color: inherit; /* mantiene el color normal */
+}
