@@ -1,0 +1,97 @@
+/* GENERAL */
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+/* SECCIÓN */
+.staff-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* TÍTULO */
+.staff-header h1 {
+    color: #ff2a2a;
+    margin-bottom: 10px;
+}
+
+.staff-header p {
+    color: #ccc;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CONTENEDOR */
+.staff-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* CARDS */
+.card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    border: 1px solid #2a2a2a; /* borde suave */
+    transition: 0.3s;
+}
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #ff2a2a;
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* NOMBRE */
+.card h3 {
+    margin: 10px 0;
+}
+
+/* CARGO */
+.card span {
+    color: #ff2a2a;
+    font-weight: bold;
+}
+
+/* DESCRIPCIÓN */
+.card p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background: #ff2a2a;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background: white;
+    color: #ff2a2a;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,80 @@
+.carrito-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px;
+    flex-wrap: wrap;
+}
+
+/* ITEMS */
+.carrito-items{
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.item img{
+    width: 80px;
+    border-radius: 10px;
+}
+
+.info{
+    flex: 1;
+    margin-left: 15px;
+}
+
+.precio{
+    font-weight: bold;
+    color: #ff3c3c;
+}
+
+/* RESUMEN */
+.carrito-resumen{
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: fit-content;
+}
+
+.resumen-linea{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.total{
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}
+
+/* BOTÓN */
+.btn-comprar-carrito{
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: red;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-comprar-carrito:hover{
+    background: white;
+    color: red;
+}

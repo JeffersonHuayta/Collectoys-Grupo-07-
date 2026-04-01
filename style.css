@@ -1,11 +1,12 @@
-
 * {
     color: white;
     box-sizing: border-box;
 }
 
-* {
-    max-width: 100%; /*para que no tenga la barra de abajo */
+
+img, video {
+    max-width: 100%;
+    height: auto;
 }
 
 body { 
@@ -17,7 +18,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-
+    height: 100%;
 }
 /* inicio barra de navegacion  */
 #logo {
@@ -228,10 +229,13 @@ iframe {
 /* FIN DE MAPAS */
 
 /* LOGIN */
+
 .section-login{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* gap: 60px;  espacio entre imagen y login */
+    /*flex-wrap: wrap;  para que en celular no se rompa */
 }
 .contenedor-login {
     background: #1c1c1c;
@@ -239,12 +243,14 @@ iframe {
     place-items: center;
     border-radius: 50px;
     padding: 20px;
+    margin: 20px 0 0; /*para que no este pegado arriba del nav */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     max-width: 450px;
     min-height: 80vh;
+    z-index: 2; /*queda al centro como ya lo tenías)*/
 }
 .contenedor-login input[type="email"],
 .contenedor-login input[type="password"] {
@@ -252,7 +258,7 @@ iframe {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    
+    color: black; /*no se notaba porque globalmente esta blanco todo, solo para lo que se escriba esta de color negro*/
 }
 .contenedor-login input[type="submit"] {
     padding: 15px;
@@ -284,4 +290,54 @@ iframe {
 }
 /* FIN DE ESTILOS LOGIN */
 
-/* INICIO ESTILOS REGISTRO */
+/* INICIO locales y horarios */
+
+/* CONTENEDOR PRINCIPAL */
+.info-tienda {
+  display: flex;
+  justify-content: center; /* centra horizontal */
+  align-items: flex-start;
+  gap: 60px; /* espacio entre bloques */
+  margin: 50px 0;
+  flex-wrap: wrap; /* responsive */
+}
+
+/* BLOQUES */
+.bloque {
+  text-align: center;
+}
+
+/* TABLAS */
+.tabla-info {
+  border-collapse: collapse;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ENCABEZADO */
+.tabla-info thead {
+  background: #111;
+  color: #fff;
+}
+
+/* CELDAS */
+.tabla-info th,
+.tabla-info td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+/* HOVER */
+.tabla-info tbody tr:hover {
+  background: #f5f5f5;
+  color: #000;
+}
+
+/* FOOTER */
+.tabla-info tfoot {
+  background: #eee;
+  font-weight: bold;
+}

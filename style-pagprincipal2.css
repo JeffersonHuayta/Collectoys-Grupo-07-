@@ -109,7 +109,7 @@
 /* FOOTER GENERAL */
 .footer {
     text-align: center;
-    padding: 40px 20px;
+    padding:20px;
     margin-top: 50px;
 }
 
@@ -129,7 +129,7 @@
     transition: all 0.3s ease;
 }
 
-/* EFECTO HOVER 🔥 */
+/* EFECTO HOVER  */
 .icono-red:hover {
     background-color: red;
     transform: scale(1.2);
@@ -169,3 +169,4 @@
     color: rgb(211, 76, 76);
     transform: scale(1.1);
 }
+
