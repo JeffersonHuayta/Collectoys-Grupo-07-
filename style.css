@@ -367,42 +367,38 @@ header {
 
 
 /* login */
-.section-login {
-    display: flex; /* flex */
-    align-items: center; /* centra vertical */
-    justify-content: center; /* centra horizontal */
+.section-formularios {
+    display: flex;
+    justify-content: center;
 }
-
-.contenedor-login {
+.contenedor-formularios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 40%;
+}
+.formularios {
     background: #1c1c1c; /* fondo */
-    width: 80%; /* ancho */
-    place-items: center; /* centra contenido */
-    border-radius: 50px; /* bordes */
-    padding: 20px; /* relleno */
-    margin: 20px 0 0; /* margen arriba */
-    display: flex; /* flex */
-    align-items: center; /* centra */
-    justify-content: center; /* centra */
-    flex-direction: column; /* en columna */
-    max-width: 450px; /* límite */
-    min-height: 80vh; /* alto mínimo */
-    z-index: 2; /* encima */
+    padding: 25px;
+    border-radius: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
 }
-
-.contenedor-login input[type="email"],
-.contenedor-login input[type="password"] {
-    width: 100%; /* ocupa todo */
-    padding: 10px; /* relleno */
-    border-radius: 10px; /* redondeado */
-    border: none; /* sin borde */
-    color: black; /* texto negro */
+.formularios input {
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .contenedor-login input[type="submit"] {
     padding: 15px; /* tamaño */
     display: flex; /* flex */
     justify-content: center; /* centra */
-    width: 100%; /* ancho completo */
+    width: 50%; /* ancho completo */
     background-color: white; /* fondo */
     color: red; /* texto */
     border-radius: 30px; /* redondo */
@@ -411,9 +407,9 @@ header {
     font-weight: bold; /* negrita */
 }
 
-.contenedor-login input[type="submit"]:hover {
-    transform: scale(1.25); /* agranda */
-    transition: all 0.3s; /* animación */
+.contenedor-formularios input[type="submit"]:hover {
+    transform: scale(1.1); /* agranda */
+    transition: 0.3s; /* animación */
     background-color: red; /* cambia color */
     color: white; /* texto blanco */
 }
