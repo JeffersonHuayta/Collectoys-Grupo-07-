@@ -475,6 +475,7 @@ header {
     text-align: center; /* centra texto */
     padding: 20px; /* relleno */
     margin-top: 50px; /* espacio arriba */
+    width: 100%;
 }
 
 /* redes sociales */
